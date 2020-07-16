@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발자로드맵</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/animation.js"></script>
+    <script>
+        //header menu active효과
+        $(function () {
+            $('header').load('header.html', function () {
+                $('#roadmap').addClass('active');
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header"></header>
+        <section>
+            <div class="container">
+                <div id="dev">
+                    <div class="col-sm-8">
+                        <h4><b>어느 로드맵을 볼건지 선택!</b></h4>
+                        <br>
+                    </div>
+
+                    <div id="front-back">
+                        <div class="col-sm-8">
+                            <button id="front-btn" type="button" class=" btn btn btn-default btn-lg ">Front-End</button>
+                            <button id="back-btn" type="button" class="btn btn btn-default btn-lg ">Back-End</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mapgallery">
+                    <div class="col-sm-12">
+                        <hr>
+                        <div id="preview">
+                            <i class="fa-li fa fa-spinner fa-spin"></i>로드맵 고르는중
+                        </div>
+                    </div>
+                    <div id="front-gallery" class="gallery_layout">
+                        <div class="gallery_content">
+                            <img src="img/travel_img.jpg" alt="배울것1">
+                            <div class="content">
+                                <h1>travel</h1>
+                                <p>도전하지 않으면, 아무것도 얻을 수 없다.</p>
+                            </div>
+                            <div class="overlay black"></div>
+                        </div>
+                        <div class="gallery_content top">
+                            <img src="img/travel_img2.jpg" alt="배울것2">
+                            <div class="content">
+                                <h1>travel</h1>
+                                <p>여행은 언제나 돈의 문제가 아니고 용기의 문제다.</p>
+                            </div>
+                            <div class="overlay black"></div>
+                        </div>
+                        <div class="gallery_content">
+                            <img src="img/travel_img3.jpg" alt="배울것3">
+                            <div class="content">
+                                <h1>travel</h1>
+                                <p>여행은 정신을 다시 젊어지게 하는 샘이다.</p>
+                            </div>
+                            <div class="overlay black"></div>
+                        </div>
+                        <div class="gallery_content">
+                            <img src="img/travel_img4.jpg" alt="배울것4">
+                            <div class="content">
+                                <h1>travel</h1>
+                                <p>여행과 변화를 사랑하는 사람은 생명을 가진 사람이다.</p>
+                            </div>
+                            <div class="overlay black"></div>
+                        </div>
+                        <div class="gallery_content">
+                            <img src="img/travel_img5.jpg" alt="배울것5">
+                            <div class="content">
+                                <h1>travel</h1>
+                                <p>바보는 방황을 하고 현명한 사람은 여행을 한다.</p>
+                            </div>
+                            <div class="overlay black"></div>
+                        </div>
+                        <div class="gallery_content">
+                            <img src="img/travel_img6.jpg" alt="배울것6">
+                            <div class="content">
+                                <h1>travel</h1>
+                                <p>낯선 땅이란 없다.</p>
+                                <p>단지 여행자가 낯설 뿐이다.</p>
+                            </div>
+                            <div class="overlay black"></div>
+                        </div>
+                    </div>
+                    <div id="back-gallery" class="gallery_layout">
+                        <div class="gallery_content">
+                            <img src="img/travel_img.jpg" alt="배울것1">
+                            <div class="content">
+                                <h1>travel</h1>
+                                <p>도전하지 않으면, 아무것도 얻을 수 없다.</p>
+                            </div>
+                            <div class="overlay black"></div>
+                        </div>
+                        <div class="gallery_content top">
+                            <img src="img/travel_img2.jpg" alt="배울것2">
+                            <div class="content">
+                                <h1>travel</h1>
+                                <p>여행은 언제나 돈의 문제가 아니고 용기의 문제다.</p>
+                            </div>
+                            <div class="overlay black"></div>
+                        </div>
+                        <div class="gallery_content">
+                            <img src="img/travel_img3.jpg" alt="배울것3">
+                            <div class="content">
+                                <h1>travel</h1>
+                                <p>여행은 정신을 다시 젊어지게 하는 샘이다.</p>
+                            </div>
+                            <div class="overlay black"></div>
+                        </div>
+                        <div class="gallery_content">
+                            <img src="img/travel_img4.jpg" alt="배울것4">
+                            <div class="content">
+                                <h1>travel</h1>
+                                <p>여행과 변화를 사랑하는 사람은 생명을 가진 사람이다.</p>
+                            </div>
+                            <div class="overlay black"></div>
+                        </div>
+                        <div class="gallery_content">
+                            <img src="img/travel_img5.jpg" alt="배울것5">
+                            <div class="content">
+                                <h1>travel</h1>
+                                <p>바보는 방황을 하고 현명한 사람은 여행을 한다.</p>
+                            </div>
+                            <div class="overlay black"></div>
+                        </div>
+                        <div class="gallery_content">
+                            <img src="img/travel_img6.jpg" alt="백엔드6">
+                            <div class="content">
+                                <h1>travel</h1>
+                                <p>낯선 땅이란 없다.</p>
+                                <p>단지 여행자가 낯설 뿐이다.</p>
+                            </div>
+                            <div class="overlay black"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer"></footer>
+    </div>
+
+</body>
+
+</html>
