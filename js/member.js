@@ -15,22 +15,26 @@ function checkMember() {
             if (entry.pwd == $('#userPwd').val()) {
                 alert('로그인 성공');
                 location.href = "index2.html";
+                return false;
             }
             else {
                 alert('비밀번호가 틀렸습니다.');
                 $('#userId').val('');
                 $('#userPwd').val('');
                 $('#userId').focus();
+                return false;
 
             }
         }
-        // console.log(entryList.length+" : "+i);
         else if (i == entryList.length - 1) {
             alert('존재하지 않는 아이디입니다.');
             $('#userId').val('');
             $('#userPwd').val('');
             $('#userId').focus();
         }
+
+        console.log(entryList.length + " : " + i);
+
 
     });
 
