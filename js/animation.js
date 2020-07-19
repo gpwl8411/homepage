@@ -1,35 +1,35 @@
 $(document).ready(function () {
     //me 말풍선 animation
     var iFlag = false;
-    var iFlag = false;
+    var hFlag = false;
     var tFlag = false;
     $("#infoQ").click(function () {
         if (!iFlag) {
             iFlag = true;
             //숫자가 1에 가까울수록 빨라진다.
             $("#infoA").fadeIn(500);
+            $("#hobbyA").fadeOut(1);
             $("#tmiA").fadeOut(1);
-            $("#tmiA").fadeOut(1);
-            tFlag=false;
+            hFlag=false;
             tFlag=false;
         } else {
             iFlag = false;
             $("#infoA").fadeOut(500);
         }
     });
-    $("#Q").click(function () {
-        if (!iFlag) {
-            iFlag = true;
+    $("#hobbyQ").click(function () {
+        if (!hFlag) {
+            hFlag = true;
             //숫자가 1에 가까울수록 빨라진다.
-            $("#infoA").fadeIn(500);
+            $("#hobbyA").fadeIn(500);
             $("#infoA").fadeOut(1);
-            $("#infoA").fadeOut(1);
+            $("#tmiA").fadeOut(1);
             iFlag=false;
             tFlag=false;
             
         } else {
-            iFlag = false;
-            $("#infoA").fadeOut(500);
+            hFlag = false;
+            $("#hobbyA").fadeOut(500);
         }
     });
     $("#tmiQ").click(function () {
@@ -37,10 +37,10 @@ $(document).ready(function () {
             tFlag = true;
             //숫자가 1에 가까울수록 빨라진다.
             $("#tmiA").fadeIn(500);
-            $("#infoA").fadeOut(1);
+            $("#hobbyA").fadeOut(1);
             $("#infoA").fadeOut(1);
             iFlag=false;
-            iFlag=false;
+            hFlag=false;
         } else {
             tFlag = false;
             $("#tmiA").fadeOut(500);
@@ -52,14 +52,14 @@ $(document).ready(function () {
     $("#front-btn").click(function () {
             // console.log("클릭은됨");
             $("#preview").css('display','none');
-            $("#back-gallery").css('display','none');
-            $("#front-gallery").css('display','block');
+            $("#backGallery").css('display','none');
+            $("#frontGallery").css('display','block');
     });
     $("#back-btn").click(function () {
             // console.log("클릭은됨");
             $("#preview").css('display','none');
-            $("#front-gallery").css('display','none');
-            $("#back-gallery").css('display','block');
+            $("#frontGallery").css('display','none');
+            $("#backGallery").css('display','block');
     });
 
     //맛집 list hover

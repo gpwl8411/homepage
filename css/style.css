@@ -65,40 +65,14 @@ header a:hover{
    color: skyblue;
    text-decoration: underline;
 }
+/* home모양 header에 아이콘 */
 #homeIcon{
    margin: 20px 10px 0px 50px;
 }
 span:hover + p.arrow_box {
    display: block;
  }
- .arrow_box {
-    text-align: center;
-   display: none;
-   position: absolute;
-   width: auto;
-   padding: 8px;
-   margin: 10px 0 0 50px;
-   -webkit-border-radius: 8px;
-   -moz-border-radius: 8px;  
-   border-radius: 8px;
-   background: #333;
-   color: #fff;
-   font-size: 14px;
- }
- .arrow_box:after {
-   position: absolute;
-   bottom: 100%;
-   left: 50%;
-   width: 0;
-   height: 0;
-   margin-left: -10px;
-   border: solid transparent;
-   border-color: rgba(51, 51, 51, 0);
-   border-bottom-color: #333;
-   border-width: 10px;
-   pointer-events: none;
-   content: " ";
- }
+ 
 /* footer */
  footer {
     position: absolute;
@@ -208,13 +182,61 @@ span:hover + p.arrow_box {
    min-width: 50%;
    min-height: 50%;
 }
+.index-container .content {
+   text-align: center;
+}
+.index-container ul{
+   list-style:none;
+   /* float: right; */
+   margin:20px 0 50px 0;
+   /* padding:40px; */
+   /* font-size: 18px; */
+}
+
+.index-container li{
+   margin: 0 20px 0 0;
+   padding: 0 0 0 0;
+   border : 0;
+   float: left;
+}
 
     /*====================
-    ANIMATION
+    ANIMATION/DECORATION
    =======================*/
    a:hover {
       cursor: pointer;
    }
+   /* 마우스오버시에 나타나는 말풍선
+   헤더에서 homeIcon과 trip에 맛집 리스트에 사용됨
+ */
+ .arrow_box {
+   text-align: center;
+  display: none;
+  position: absolute;
+  width: auto;
+  padding: 8px;
+  margin: 10px 0 0 50px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;  
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+}
+.arrow_box:after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-bottom-color: #333;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+}
 
  /*밑줄넣기 부분*/
 .question-bubble > span::after {
@@ -239,10 +261,6 @@ span:hover + p.arrow_box {
    border-bottom: 4px solid #343535;
    transition:all .3s ease;
  }
- 
-   /*======================
-   DECORATION
-   =====================*/
    /*말풍선*/
    .question-bubble {
       position: relative;
@@ -300,8 +318,13 @@ span:hover + p.arrow_box {
 	   margin-left: -30px;
    }
    /* 로드맵 gallery */
-   #front-gallery , #back-gallery{
+   #frontGallery , #backGallery{
       display: none;
+
+   }
+   #frontGallery img, #backGallery img{
+      height: auto;
+      width: 100%;
    }
    .gallery_content:hover .overlay.right {
       top: 0;
@@ -399,3 +422,9 @@ span:hover + p.arrow_box {
       display: block;
       transition: all 0.5s ease-in-out;
   }
+
+  
+/* 회원가입 */
+.sign-up .form-group{
+   margin: 0;
+}

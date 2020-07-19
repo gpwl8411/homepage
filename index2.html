@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" /> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/animation.js"></script>
+    <script src="js/member.js"></script>
 
 </head>
 
@@ -23,8 +25,13 @@
                 <img src="images/index.jpg" alt="" class="animate__animated animate__fadeIn">
                 <div class="content">
                     <h2 class="animate__animated animate__fadeIn">Hyeji's HomePage</h2>
-                    <button type="button" class="btn btn-default" onclick="location.href='login.html';">LOGIN</button>
-                    <button type="button" class="btn btn-default" onclick="location.href='signup.html';">SIGNUP</button>
+                    <ul>
+                        <li > <a id="me" href="me.html"><b>ME</b></a> </li>
+                        <li><a id="trip" href="trip.html"><b>TRIP</b></a></li>
+                        <li><a id="roadmap" href="roadmap.html"><b>ROADMAP</b> </a></li>
+                        <li><a id="memberList" href="memberList.html"><b>MEMBER LIST</b> </a></li>
+                    </ul>
+                    <button type="button" class="btn btn-default" onclick="return logout();">LOGOUT</button>
                 </div>
                 <div class="overlay black"></div>
         </div>

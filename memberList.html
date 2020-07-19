@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원목록열람</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <script src="js/footer.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/member.js"></script>
+  <script>
+    //header menu active효과
+    $(function () {
+      $('header').load('header2.html', function () {
+        $('#memberList').addClass('active');
+      });
+      listDisplay();
+
+    });
+  </script>
+
+</head>
+<div id="wrapper">
+  <!-- start header 메뉴 -->
+  <header id="header"></header>
+  <body>
+    <section>
+      <div class="container">
+        <h2><b>회원목록열람</b></h2>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+         <table id="listTable" class="table table-striped">
+             <thead>
+                 <th>이름</th>
+                 <th>아이디</th>
+                 <th>이메일</th>
+                 <th>날짜</th>
+             </thead>
+             <tbody>
+
+             </tbody>
+
+         </table>
+
+        </div>
+
+    </section>
+    <footer id="footer"></footer>
+</div>
+</body>
+
+</html>
