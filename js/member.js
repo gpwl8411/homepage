@@ -46,6 +46,9 @@ function checkMember() {
 function listDisplay() {
     var $table = $("#listTable tbody");
     var entryList = JSON.parse(localStorage.getItem("entryList"));
+    //초기화
+    $table.html('');
+    $('#searchName').val('');
 
     $.each(entryList, function (i, entry) {
         console.log(i, entry);
@@ -59,7 +62,44 @@ function listDisplay() {
             + "</tr>";
         $table.append(tr);
     });
+    if($table.html()==''){
+        $table.append("등록된 회원이 없습니다.");
+    }
 };
+
+//이름으로 회원조회
+function searchName() {
+    var $table = $("#listTable tbody");
+    var entryList = JSON.parse(localStorage.getItem("entryList"));
+    //초기화
+    $table.html('');
+    var tr;
+    $.each(entryList, function (i, entry) {
+        console.log(i, entry);
+        var d = new Date(entry.date);
+        var name = entry.name;
+        
+        if(name == $('#searchName').val()){
+            tr = "<tr>"
+            + "<td>" + name + "</td>"
+            + "<td>" + entry.id + "</td>"
+            + "<td>" + entry.email + "</td>"
+            + "<td>" + (d.getMonth() + 1) + "/" + d.getDate() + "</td>"
+            + "</tr>";
+            return false;
+        
+        }
+        else if(i == entryList.length-1){
+            tr="조회된 항목이 없습니다.";
+        }
+        
+    });
+    $table.append(tr);
+};
+
+
+
+
 // signup.html
 //회원가입 validation
 var ncheck = false;
@@ -175,7 +215,7 @@ function saveMember(flag) {
         localStorage.setItem("entryList", jsonStr);//json
 
         alert("회원가입이 완료되었습니다.");
-        location.href = "index.html";
+        // location.href = "index.html";
 
     }
 };
